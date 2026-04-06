@@ -1,4 +1,4 @@
-# **Pendahuluan**
+## **Pendahuluan**
 
 Load [Waveform Database Software Package (WFDB)](https://physionet.org/content/wfdb-matlab/0.10.0/) dan arahkan direktori ke workspace.
 
@@ -20,7 +20,7 @@ websave([rec '.dat'], [base rec '.dat'], opts);
 websave([rec '.atr'], [base rec '.atr'], opts);
 ```
 
-# **1\. Akuisisi dan Visualisasi Data Raw**
+## **1\. Akuisisi dan Visualisasi Data Raw**
 
 Ambil parameter dari header Record 0001 dengan diperoleh **Fs \= 250 Hz**. Channel yang diambil adalah kolom ke-2 dan hanya diambil sampel selama 10 detik dari awal perekaman.
 
@@ -44,7 +44,7 @@ Hasil plot:
 
 Terlihat bahwa data raw masih terdapat noise.
 
-# **2\. Proses Filtering**
+## **2\. Proses Filtering**
 
 Sebelum diproses, sinyal terlebih dahulu dibebaskan dari noise agar hasil proses maksimal.
 
@@ -94,7 +94,7 @@ Hasil plot:
 
 Mendapatkan SNR sekitar **35.64 dB** yang dimana filter berhasil mengurangi beberapa noise.
 
-# **3\. Deteksi Lokasi R-Peak**
+## **3\. Deteksi Lokasi R-Peak**
 
 Untuk mendeteksi lokasi dari R-Peak, dapat menggunakan fungsi Pan-Tompkins.
 
@@ -163,7 +163,7 @@ Hasil plot dan terminal:
 
 ![](images/img4.png)
 
-# **4\. Analisis Irama Jantung**
+## **4\. Analisis Irama Jantung**
 
 Jumlah detak dihitung dari banyaknya R-peak (r\_locs). Durasi sinyal dihitung dalam menit, lalu BPM diperoleh dari jumlah detak dibagi durasi tersebut.
 
@@ -206,7 +206,7 @@ Hasil terminal:
 
 Dari hasil, menampilkan bahwa rekaman tersebut mendapatkan BPM sekitar **77.97 BPM** sehingga dikategorikan normal.
 
-# **5\. Fitur Ekstraksi**
+## **5\. Fitur Ekstraksi**
 
 Kemudian dilakukan ekstraksi fitur di setiap 10 detiknya selama 1 menit perekaman.
 
@@ -531,7 +531,7 @@ Hasil plot:
 ![](images/img10.png)
 
 
-# **6\. Machine Learning**
+## **6\. Machine Learning**
 
 Import dari dataset dari ekstraksi fitur sebelumnya.
 
