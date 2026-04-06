@@ -1,5 +1,12 @@
 # **Pendahuluan**
 
+Load [Waveform Database Software Package (WFDB)](https://physionet.org/content/wfdb-matlab/0.10.0/) dan arahkan direktori ke workspace.
+
+```m
+addpath '/home/aliy/Documents/matlab/mcode'; % path WFDB
+cd '/home/aliy/Documents/PhysioNetData/UTS'; % path workspace
+```
+
 Download data AHA Database Sample Excluded Record dari [Physionet.org](http://Physionet.org). Record yang akan diproses adalah Record 0001\.
 
 ```m
@@ -11,13 +18,6 @@ opts = weboptions('Timeout',60);
 websave([rec '.hea'], [base rec '.hea'], opts);
 websave([rec '.dat'], [base rec '.dat'], opts);
 websave([rec '.atr'], [base rec '.atr'], opts);
-```
-
-Load Waveform Database Software Package (WFDB) dan arahkan direktori ke workspace.
-
-```m
-addpath '/home/aliy/Documents/matlab/mcode';
-cd '/home/aliy/Documents/PhysioNetData/UTS';
 ```
 
 # **1\. Akuisisi dan Visualisasi Data Raw**
