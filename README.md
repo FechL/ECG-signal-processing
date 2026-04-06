@@ -591,7 +591,3 @@ Kesimpulan:
 Dari ke-4 model tersebut, terlihat bahwa model **Decision Tree** dan **SVM** memberikan performa terbaik dengan **akurasi 100%**. Sedangkan model lainnya hampir sempurna.
 
 Namun, dengan akurasi sempurna bisa berarti dataset memang sangat clean dan terpisah jelas, atau data terlalu sederhana.
-
-# **Source:**
-
-Github: [https://github.com/FechL/ECG-signal-processing](https://github.com/FechL/ECG-signal-processing)
